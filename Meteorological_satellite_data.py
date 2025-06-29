@@ -38,6 +38,6 @@ for i in range(7):
         filename = os.path.join(output_dir, f"japan_{date}.png")
         with open(filename, "wb") as f:
             f.write(response.content)
-        print(f"✅ {date} 保存完了: {filename}")
+        print(f"[OK] {date} 保存完了: {filename}")
     else:
-        print(f"❌ {date} の取得に失敗（ステータス: {response.status_code}）")
+        print(f"[NG] {date} の取得に失敗（ステータス: {response.status_code}）")
