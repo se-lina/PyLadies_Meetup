@@ -1,8 +1,8 @@
-```
+"""
 NASA Worldview から 過去7日間分の衛星画像（PNG形式） を自動でダウンロードするPythonスクリプトで
 NASA EarthdataのAPIキーや認証は不要な範囲でWorldview Snapshot APIを利用します。
 スクリプトと同じディレクトリに nasa_worldview_images フォルダが作られ、その中に画像が保存されます。
-```
+"""
 import requests
 from datetime import datetime, timedelta
 import os
